@@ -1,9 +1,9 @@
 import 'package:e_commerce/modules/auth/forget_password.dart';
 import 'package:e_commerce/modules/auth/login_screen.dart';
-import 'package:e_commerce/modules/auth/reset_password.dart';
 import 'package:e_commerce/modules/auth/sign_up.dart';
 import 'package:flutter/material.dart';
 
+import 'modules/auth/reset_password.dart';
 import 'modules/launch/on_bording_screen.dart';
 import 'modules/launch/splash_screen.dart';
 void main(){
