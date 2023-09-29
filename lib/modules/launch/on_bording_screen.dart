@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../../custom_text_button.dart';
+import '../../widget/custom_text_button.dart';
 import '../../widget/on_bording_content.dart';
 
 class BordingScreen extends StatefulWidget {
@@ -34,10 +34,10 @@ class _BordingScreenState extends State<BordingScreen> {
               alignment: AlignmentDirectional.topEnd,
               child: Visibility(
                 visible: _currentPage<2,
-                replacement:  CustomTextButton(text: 'Start',onPress: (){
-                  Navigator.pushReplacementNamed(context, '/login_screen');
+                replacement:  CustomTextButton(text: 'START',onPress: (){
+                  Navigator.pushReplacementNamed(context,  '/login_screen');
                 },),
-                child: CustomTextButton(text: 'Next',onPress: (){
+                child: CustomTextButton(text: 'NEXT',onPress: (){
                   _pageController.nextPage(duration: const Duration(seconds: 1), curve: Curves.easeInBack);
                 },),
               ),
